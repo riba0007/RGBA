@@ -1,8 +1,8 @@
 package model;
 
-import java.util.Observable;
-
 import android.graphics.Color;
+
+import java.util.Observable;
 
 /**
  * The model holds the data.
@@ -75,24 +75,28 @@ public class RGBAModel extends Observable {
 
     // SETTERS
     public void setAlpha( Integer alpha ) {
+        //this.alpha = alpha > this.MAX_ALPHA ? this.MAX_ALPHA : alpha < this.MIN_ALPHA ? this.MIN_ALPHA : alpha;
         this.alpha = alpha;
 
         this.updateObservers();
     }
 
     public void setBlue(Integer blue) {
+        //this.blue = blue > this.MAX_RGB ? this.MAX_RGB : blue < this.MIN_RGB ? this.MIN_RGB : blue;
         this.blue = blue;
 
         this.updateObservers();
     }
 
     public void setGreen(Integer green) {
+        //this.green = green > this.MAX_RGB ? this.MAX_RGB : green < this.MIN_RGB ? this.MIN_RGB : green;
         this.green = green;
 
         this.updateObservers();
     }
 
     public void setRed(Integer red) {
+        //this.red = red > this.MAX_RGB ? this.MAX_RGB : red < this.MIN_RGB ? this.MIN_RGB : red;
         this.red = red;
 
         this.updateObservers();
